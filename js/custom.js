@@ -156,12 +156,12 @@ $('ul#flickrfeed').jflickrfeed({
 
 jQuery(window).load(function() {
     jQuery('#nivoslider').nivoSlider({
-        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+        effect: 'sliceUpDownLeft', // Specify sets like: 'fold,fade,sliceDown'
         slices: 15, // For slice animations
         boxCols: 8, // For box animations
         boxRows: 4, // For box animations
         animSpeed: 500, // Slide transition speed
-        pauseTime: 5000, // How long each slide will show
+        pauseTime: 4000, // How long each slide will show
         startSlide: 0, // Set starting Slide (0 index)
         directionNav: true, // Next & Prev navigation
         controlNav: false, // 1,2,3... navigation
@@ -170,7 +170,7 @@ jQuery(window).load(function() {
         manualAdvance: false, // Force manual transitions
         prevText: '', // Prev directionNav text
         nextText: '', // Next directionNav text
-        randomStart: false, // Start on a random slide
+        randomStart: true, // Start on a random slide
         beforeChange: function(){}, // Triggers before a slide transition
         afterChange: function(){}, // Triggers after a slide transition
         slideshowEnd: function(){}, // Triggers after all slides have been shown
@@ -262,9 +262,9 @@ jQuery(window).load(function() {
 	jQuery('.portfolio-carousel').carousel({interval: false, wrap: false});
 	
 	
-	jQuery('.client-carousel').carousel({interval: false, wrap: false});
+	jQuery('.client-carousel').carousel({interval: 4000, wrap: true, pause: "hover"});
 	
-	jQuery('.testimonials-carousel').carousel({interval: 5000, pause: "hover"});
+	jQuery('.testimonials-carousel').carousel({interval: false, pause: "hover"});
 
 
 
@@ -640,7 +640,7 @@ jQuery(document).ready(function () {
 	/*----------------------------------------------------*/
 	/*	Contact Form Section
 	/*----------------------------------------------------*/
-$("#contact").submit(function (e) {
+/* $("#contact").submit(function (e) {
     e.preventDefault();
     var name = $("#name").val();
     var email = $("#email").val();
@@ -670,4 +670,4 @@ $("#contact").submit(function (e) {
     }
 
     return false;
-});
+}); */

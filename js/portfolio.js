@@ -6,8 +6,9 @@ jQuery(function () {
 
     var jQuerycontainer = jQuery('.portfolio');
 
-    jQuerycontainer.isotope({
-        itemSelector: '.item'
+    jQuerycontainer.imagesLoaded( function() {
+		jQuerycontainer.isotope({
+			itemSelector: '.item'})
     });
 
 
