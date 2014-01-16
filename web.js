@@ -16,7 +16,7 @@ app.post('/getFormData', function(req, res) {
     "TextBody": new String('From: ' + req.body.name + '.\n\rEmail: ' + req.body.email + '.\n\rPhone: ' + req.body.phone + '.\n\rSubject: ' + req.body.subject + '.\n\rMessage: ' + req.body.message)
 	}, function(error, success) {
     if(error) {
-        res.send("We have had technical difficulties and we regret to say you email hasn't been delivered to Venezia");
+        res.send("We have had technical difficulties and we regret to say you email hasn't been delivered to Venezia Marble.");
        return;
     }
     res.send("Thank you for contacting us.  We will respond as soon as possible.")
