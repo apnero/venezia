@@ -2,11 +2,11 @@
   "name": "veneziamarble",
   "version": "0.0.1",
   "dependencies": {
-    "express": "4.2.x",
-	"postmark": "0.1.x"
+    "express": "2.5.x",
+	"postmark": ">0.1.x"
   },
   "engines": {
-    "node": ">4.x.x",
+    "node": ">0.8.x",
     "npm": ">1.1.x"
   }
 }
