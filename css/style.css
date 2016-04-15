@@ -111,6 +111,7 @@ header .top-bar {
     background: #25292C;
 	border-bottom: 1px solid #414f5a;
     padding: 7px 0;
+    font-size:1.2em;
 }
 
 .topnav .navbar-toggle i {
@@ -2413,6 +2414,10 @@ header .social li.rss:hover,footer .social li.rss:hover {
 	text-align:center;
 }
 
+.member-social.dark{
+    height:40px;
+}
+
 .member-social.dark a {
     background: #9e9e9e;
     -webkit-transition: background .5s ease-in-out;
@@ -2420,6 +2425,7 @@ header .social li.rss:hover,footer .social li.rss:hover {
     -o-transition: background .5s ease-in-out;
     -ms-transition: background .5s ease-in-out;
     transition: background .5s ease-in-out;
+    
 }
 
 .team .item .team-member-links a {
@@ -2503,3 +2509,6 @@ footer a,.contact-box:hover,#options li a.selected,header .top-bar,header .top-b
 .panel-group .panel,.accordionMod .accordion-group {
     margin-bottom: 15px;
 }
+
+
+
